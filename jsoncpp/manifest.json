@@ -1,0 +1,15 @@
+{
+    ".": {
+        "directories": {
+            "resources": {
+                "directories": {},
+                "files": []
+            }
+        }, 
+        "files": []
+    },
+    "game-server": "localhost",
+    "runtime-version": "1.0.0",
+    "server-version": "dev",
+    "launcher-version": "1.0.3"
+}
