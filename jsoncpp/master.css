@@ -1,0 +1,65 @@
+/*
+  master -- Jala Design PTY LTD -- http://jaladesign.com.au
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body { font-family: "Open Sans", sans-serif; background-image: url("../images/background.png"); }
+
+.container { max-width: 1160px; margin: 0 auto; }
+
+.col-left { float:left; padding-left: 2.5vw; padding-top: 5vh; }
+.col-right { float:right; padding-left: 2.5vw; padding-top: 5vh; }
+.sidebar { width: 20%; float: left; }
+.main-col { width: 70%; float: right; }
+
+.cf::before, .cf::after { content: ""; display: table; }
+.cf::after { clear: both; }
+.cf { zoom: 1; }
+
+::selection { color: #000; background-color: #F69988; }
+
+/*
+  header -- Jala Design -- http://jaladesign.com.au
+*/
+
+.header { position: relative; }
+
+#logo { width: 330px; height: 120px; display: block; background: url("../images/logo.png"); margin-left: 1vw;}
+#logo:hover { background-position: 0 -120.5px; cursor: pointer; }
+
+#navigation-bar li { float: right; margin-left: 2vw; cursor: pointer; }
+#navigation-bar li:hover { border-bottom: 2.5px solid #8DD5CC;}
+#navigation-bar ul { list-style: none; padding-right: .5vw; }
+#navigation-bar { float: right; position: absolute; right: 0; bottom: 0; }
+
+/*
+  content -- Jala Design PTY LTD -- http://jaladesign.com.au
+*/
+
+.content { min-height: 85vh; background: #fff; max-width: 100%; border-top: 3px solid #F69988; }
+.content h2 { font-weight: 400; }
+hr { width: 85%; border: .25vh solid #F69988; margin-left: 0; }
+
+/*
+  mobile -- Jala Design PTY LTD -- http://jaladesign.com.au
+*/
+
+/*
+ Header Mobile Wrap
+ ==================
+*/
+
+.bar { display: none; }
+
+#mobile-trigger { display: none; }
+
+@media screen and (max-width: 768px) {
+  .bar { background-color:#000; border-radius:1px; display:block; width:16px; height:2px; margin:0px auto 2px; }
+  #navigation-bar ul { display: none; }
+  #mobile-trigger { display: block; position: absolute; right: 5vw; bottom: 2.5vw; border: 1.5px solid #000; padding: 3px 3px 1.5px 2.5px; border-radius: 2.5px; cursor: pointer;}
+  #logo { width: 165px; height: 60px; background-position: 0px 240px; background-size: cover; }
+  #logo:hover { background-position: 0px 300px; }
+  .main-col { width: 90%; float: none; }
+  .sidebar { width: 90%; }
+}
